@@ -52,21 +52,17 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-
 const Experience = () => {
   return (
-
-
     <>
-    <div></div>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           Résultats
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Analyse
+          Analyse.
         </h2>
-        <h2 >
+        <p className={`${styles.sectionSubText} text-center`}>
         Voici l'analyse de nos diagrammes. Les élèves
            ce sont concentré sur
            les données qui ont comme 
@@ -74,11 +70,13 @@ const Experience = () => {
            au courant des 10 ans du Centre national des arts. Alors dans les tableaux et diagrammes qui suivent, on utilise majoritairement les données de lieu de naissance, de pays d'origine,
           d'origine éthnique, de genre et de langues
           des artistes. On étudie la citoyenneté, l'origine éthnique et les genres. On vous encourage de créer vos propres opinions et analyses afin 
-        </h2>
-        
+
+        </p>
+
+
       </motion.div>
 
-      <div className='mt-10 flex-col'>
+      <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
